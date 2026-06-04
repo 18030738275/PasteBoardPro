@@ -90,6 +90,20 @@ struct ContentView: View {
                     .padding(.vertical, 10)
                 }
             }
+
+            // 底部工具栏
+            Divider()
+            HStack {
+                Button("退出") {
+                    NSApplication.shared.terminate(nil)
+                }
+                .font(.system(size: 11))
+                .foregroundColor(.secondary)
+                .buttonStyle(.plain)
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
         }
         .frame(width: 380, height: 500)
         .background(Color(nsColor: .windowBackgroundColor))
