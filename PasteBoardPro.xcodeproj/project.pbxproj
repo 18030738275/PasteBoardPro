@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C6641E8126FFD7852AD5EF2 /* PasteBoardProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2B9EB0A80E2DF0015801C /* PasteBoardProApp.swift */; };
+		421FB5BA8FEF34FF746257DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A303D7ACB38FE999D5335A /* ContentView.swift */; };
+		4640CE5D3A05EF6D5983D949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5251FD993403F7F1BB82142 /* Assets.xcassets */; };
+		861A2A492CE1D63B76DEACCE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA129E0250ED88A56EC821 /* SettingsView.swift */; };
+		9149D62F3D95BD0788A7C6F0 /* ClipCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6E6B552DC4B5537C0A08B /* ClipCardView.swift */; };
+		9B833E522CA494BBF780F051 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = B09A7FA52AB5B13621B9FAF4 /* GRDB */; };
+		BBD34D986DB5395333185AB6 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA4F5CFD8D579FD103C6DC /* DatabaseManager.swift */; };
+		BF95E84083D353520E3CBD8C /* FilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF25C4B3498B182B18D74354 /* FilterBar.swift */; };
+		C8EF9E48B88BE91BB1F5ED24 /* ClipboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2871AAE816E5A14B84E73EAD /* ClipboardMonitor.swift */; };
+		DA20B9A8278AE88A9CCD5CB5 /* ClipboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353AA44B1DAD2A23DDEFB5FB /* ClipboardItem.swift */; };
+		F3D09E0CB8A67F5CAF7760C7 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E9EF8548EA8F37DB385994 /* SearchBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21E9EF8548EA8F37DB385994 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2871AAE816E5A14B84E73EAD /* ClipboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitor.swift; sourceTree = "<group>"; };
+		353AA44B1DAD2A23DDEFB5FB /* ClipboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItem.swift; sourceTree = "<group>"; };
+		39DCBDB5DD9DBA998E3AEC16 /* PasteBoardPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasteBoardPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CA5C43EF4204DDD925D46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		55A303D7ACB38FE999D5335A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5ADA129E0250ED88A56EC821 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A8E6E6B552DC4B5537C0A08B /* ClipCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipCardView.swift; sourceTree = "<group>"; };
+		B5251FD993403F7F1BB82142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9CA4F5CFD8D579FD103C6DC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		EBB2B9EB0A80E2DF0015801C /* PasteBoardProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteBoardProApp.swift; sourceTree = "<group>"; };
+		EF25C4B3498B182B18D74354 /* FilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FB573DB66D52E8DD16BE6B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B833E522CA494BBF780F051 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063285FC29123DD828CB18A8 = {
+			isa = PBXGroup;
+			children = (
+				515227E855CC88FED25A71F2 /* PasteBoardPro */,
+				90867658FCC75C1644625950 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1225114B57BC4181059EA51D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2871AAE816E5A14B84E73EAD /* ClipboardMonitor.swift */,
+				C9CA4F5CFD8D579FD103C6DC /* DatabaseManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C6AE611C070775FA3D6FBFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5251FD993403F7F1BB82142 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		515227E855CC88FED25A71F2 /* PasteBoardPro */ = {
+			isa = PBXGroup;
+			children = (
+				40CA5C43EF4204DDD925D46F /* Info.plist */,
+				EBB2B9EB0A80E2DF0015801C /* PasteBoardProApp.swift */,
+				FBED2025B4D240A4EF0F0189 /* Models */,
+				4C6AE611C070775FA3D6FBFF /* Resources */,
+				1225114B57BC4181059EA51D /* Services */,
+				DBD1D1962371EAF8F47D1DAA /* Views */,
+			);
+			path = PasteBoardPro;
+			sourceTree = "<group>";
+		};
+		90867658FCC75C1644625950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39DCBDB5DD9DBA998E3AEC16 /* PasteBoardPro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBD1D1962371EAF8F47D1DAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8E6E6B552DC4B5537C0A08B /* ClipCardView.swift */,
+				55A303D7ACB38FE999D5335A /* ContentView.swift */,
+				EF25C4B3498B182B18D74354 /* FilterBar.swift */,
+				21E9EF8548EA8F37DB385994 /* SearchBar.swift */,
+				5ADA129E0250ED88A56EC821 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBED2025B4D240A4EF0F0189 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				353AA44B1DAD2A23DDEFB5FB /* ClipboardItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FBA9773E6463B308EC79075 /* PasteBoardPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EE2B0FA89D5C705168ADED7 /* Build configuration list for PBXNativeTarget "PasteBoardPro" */;
+			buildPhases = (
+				1E76DF1F6CACBA2E1078EA80 /* Sources */,
+				4BAEB2F9B47AD49ED7AF0797 /* Resources */,
+				5FB573DB66D52E8DD16BE6B4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasteBoardPro;
+			packageProductDependencies = (
+				B09A7FA52AB5B13621B9FAF4 /* GRDB */,
+			);
+			productName = PasteBoardPro;
+			productReference = 39DCBDB5DD9DBA998E3AEC16 /* PasteBoardPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87C0DF901FF8E6B2AC7B0661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					9FBA9773E6463B308EC79075 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C77CC742E02A9AB9B4301E3B /* Build configuration list for PBXProject "PasteBoardPro" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 063285FC29123DD828CB18A8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				136924331F486D5DF486FAB3 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 90867658FCC75C1644625950 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FBA9773E6463B308EC79075 /* PasteBoardPro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BAEB2F9B47AD49ED7AF0797 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4640CE5D3A05EF6D5983D949 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E76DF1F6CACBA2E1078EA80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9149D62F3D95BD0788A7C6F0 /* ClipCardView.swift in Sources */,
+				DA20B9A8278AE88A9CCD5CB5 /* ClipboardItem.swift in Sources */,
+				C8EF9E48B88BE91BB1F5ED24 /* ClipboardMonitor.swift in Sources */,
+				421FB5BA8FEF34FF746257DC /* ContentView.swift in Sources */,
+				BBD34D986DB5395333185AB6 /* DatabaseManager.swift in Sources */,
+				BF95E84083D353520E3CBD8C /* FilterBar.swift in Sources */,
+				0C6641E8126FFD7852AD5EF2 /* PasteBoardProApp.swift in Sources */,
+				F3D09E0CB8A67F5CAF7760C7 /* SearchBar.swift in Sources */,
+				861A2A492CE1D63B76DEACCE /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6FB1BD2DFCF47022C08D21A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = PasteBoardPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pasteboardpro.app;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		B3CB55424780A1CD0EC2E970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E3BCBDB5D9DD4300A4DD7467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = PasteBoardPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pasteboardpro.app;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		FBA030D74C379E65A7123240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EE2B0FA89D5C705168ADED7 /* Build configuration list for PBXNativeTarget "PasteBoardPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BCBDB5D9DD4300A4DD7467 /* Debug */,
+				6FB1BD2DFCF47022C08D21A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C77CC742E02A9AB9B4301E3B /* Build configuration list for PBXProject "PasteBoardPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3CB55424780A1CD0EC2E970 /* Debug */,
+				FBA030D74C379E65A7123240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		136924331F486D5DF486FAB3 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B09A7FA52AB5B13621B9FAF4 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 136924331F486D5DF486FAB3 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 87C0DF901FF8E6B2AC7B0661 /* Project object */;
+}
